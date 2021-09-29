@@ -43,12 +43,12 @@ response = client.create_job(
             '......',
         ]
     },
-    MaxRetries=3,
+    MaxRetries=0,
     Timeout=2880,
     Tags={
         'created-by': '......'
     },
-    GlueVersion='2.0',
+    GlueVersion='3.0',
     NumberOfWorkers=10,
     WorkerType='G.1X'
 )
