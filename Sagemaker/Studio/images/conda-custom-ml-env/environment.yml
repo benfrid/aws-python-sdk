@@ -1,0 +1,22 @@
+name: custom-mlenv
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - numpy
+  - pandas
+  - seaborn
+  - plotly
+  - wordcloud
+  - scikit-learn
+  - nltk
+  - spacy
+  - xgboost
+  - lightgbm
+  - catboost
+  - shap
+  - awscli
+  - boto3
+  - awswrangler 
+  - ipykernel
+
