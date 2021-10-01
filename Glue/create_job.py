@@ -6,32 +6,33 @@
 import boto3
 import os
 
-os.environ['AWS_PROFILE'] = "......"
-os.environ['AWS_DEFAULT_REGION'] = "......"
+os.environ['AWS_PROFILE'] = "______"
+os.environ['AWS_DEFAULT_REGION'] = "______"
 
 # Set Glue as client
 client = boto3.client('glue')
 
 
 # Glue job parameters:
-job_directory = '......'
-partition_column = '......'
+job_directory = '______'
+partition_column = '______'
 
 
 # Job settings(for additional details on the parameters, use reference link)
 response = client.create_job(
-    Name='......',
-    Description='......',
-    Role='......',
+    Name='______',
+    Description='______',
+    Role='______',
     ExecutionProperty={
         'MaxConcurrentRuns': 3
     },
     Command={
         'Name': 'glueetl',
-        'ScriptLocation': '......',
+        'ScriptLocation': '______',
         'PythonVersion': '3'
     },
     DefaultArguments={
+        '--TempDir': "______",
         '--job-bookmark-option': 'job-bookmark-enable',
         '--enable-continuous-cloudwatch-log': 'true',
         '--enable-continuous-log-filter': 'true',
@@ -40,13 +41,13 @@ response = client.create_job(
     },
     Connections={
         'Connections': [
-            '......',
+            '______',
         ]
     },
     MaxRetries=0,
     Timeout=2880,
     Tags={
-        'created-by': '......'
+        '__Key__': '__Value__'
     },
     GlueVersion='3.0',
     NumberOfWorkers=10,
