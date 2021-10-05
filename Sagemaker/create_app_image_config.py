@@ -25,7 +25,7 @@ response = client.create_app_image_config(
     KernelGatewayImageConfig={
         'KernelSpecs': [
             {
-                'Name': 'conda-env-custom-mlenv-py',
+                'Name': '___conda-env-{environment-name}-py___',   # environment-name is defined in the environment.yml file
                 'DisplayName': '___kernel_display_name_in_studio___'
             },
         ],
