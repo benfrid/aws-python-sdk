@@ -1,3 +1,8 @@
+# Use this template to add a resource policy to Glue (can be viewed in Glue settings)
+
+# Reference link
+# https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.put_resource_policy
+
 import boto3
 import os
 import json
