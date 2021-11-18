@@ -1,5 +1,7 @@
 # Use this template to create a new database in glue
 
+# Note: To grant permissions to a database, use LakeFormation
+
 # Reference link
 # https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_database
 
