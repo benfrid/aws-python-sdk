@@ -6,26 +6,26 @@
 import boto3
 import os
 
-os.environ['AWS_PROFILE'] = "....."
-os.environ['AWS_DEFAULT_REGION'] = "....."
+os.environ['AWS_PROFILE'] = "______"
+os.environ['AWS_DEFAULT_REGION'] = "______"
 
 # Set Glue as client
 client = boto3.client('glue')
 
 
 response = client.create_crawler(
-    Name='.....',
-    Role='.....',
-    DatabaseName='.....',
-    Description='......',
+    Name='______',
+    Role='___name____',
+    DatabaseName='___db_to_write_results___',
+    Description='______',
     Targets={
         'S3Targets': [
             {
-                'Path': '.....'
+                'Path': '______'
             }
         ]
     },
-    TablePrefix='.....',
+    TablePrefix='______',
     SchemaChangePolicy={
         'UpdateBehavior': 'UPDATE_IN_DATABASE',
         'DeleteBehavior': 'DELETE_FROM_DATABASE'
@@ -34,7 +34,7 @@ response = client.create_crawler(
         'RecrawlBehavior': 'CRAWL_EVERYTHING'
     },
     Tags={
-        'created-by': '.....'
+        '______': '______'
     }
 )
 
