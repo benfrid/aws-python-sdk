@@ -16,9 +16,9 @@ client = boto3.client('sagemaker')
 
 response = client.create_image(
     Description='_____',
-    DisplayName='___image_display_name___',
-    ImageName='_____',
-    RoleArn='___sagemaker_role___',
+    DisplayName='___DisplayName___',
+    ImageName='___Name___',
+    RoleArn='___sagemaker_role_arn___',
     Tags=[
         {
             'Key': '_____',
