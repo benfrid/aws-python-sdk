@@ -1,0 +1,25 @@
+# Use this template to delete the datasets in Amazon forecast
+
+# Reference link
+# https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService.Client.update_dataset_group
+
+# Step 4
+
+import boto3
+import os
+
+os.environ['AWS_PROFILE'] = "______"
+os.environ['AWS_DEFAULT_REGION'] = "______"
+
+
+# Set ECR as client
+client = boto3.client('forecast')
+
+response = client.update_dataset_group(
+    DatasetGroupArn='______',
+    DatasetArns=[
+        '______',
+    ]
+)
+
+print(response)
