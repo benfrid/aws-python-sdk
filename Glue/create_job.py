@@ -37,7 +37,8 @@ response = client.create_job(
         '--enable-continuous-cloudwatch-log': 'true',
         '--enable-continuous-log-filter': 'true',
         '--job_directory': job_directory,
-        '--partition_column': partition_column
+        '--partition_column': partition_column,
+        '--additional-python-modules': '______'
     },
     Connections={
         'Connections': [

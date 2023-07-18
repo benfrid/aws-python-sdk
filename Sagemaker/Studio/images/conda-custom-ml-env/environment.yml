@@ -1,19 +1,28 @@
-name: custom-mlenv
+name: mlops
 channels:
   - conda-forge
+  - defaults
 dependencies:
   - python
   - numpy
   - pandas
+  - pre-commit
+  - sphinx
+  - sphinx-autoapi
+  - sphinx-rtd-theme
+  - m2r2
+  - mistune
+  - bandit
+  - pip-audit
+  - nbconvert
+  - ipywidgets
+  - pandas-profiling
   - seaborn
   - plotly
-  - wordcloud
+  - plotly_express
+  - flask
   - scikit-learn
-  - nltk
-  - spacy
   - xgboost
-  - lightgbm
-  - catboost
   - shap
   - awscli
   - boto3

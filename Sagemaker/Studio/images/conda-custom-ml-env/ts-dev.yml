@@ -1,0 +1,17 @@
+name: ts-dev
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - tslearn
+  - pandas
+  - ipywidgets
+  - seaborn
+  - plotly
+  - plotly_express
+  - scikit-learn
+  - awscli
+  - boto3
+  - awswrangler 
+  - ipykernel
+
